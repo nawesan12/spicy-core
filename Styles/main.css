@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css2?family=Diplomata+SC&family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: 'Poppins', sans-serif;
+  background: #402929;
+  -webkit-transition: .4s all ease;
+  transition: .4s all ease;
+}
+
+a {
+  text-decoration: none;
+  color: #282828;
+  font-weight: bold;
+}
+
+li {
+  list-style-type: none;
+}
+
+#burger {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+.main-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.component-wrapper {
+  margin: 4rem 0;
+  border-radius: 1rem;
+  width: 80vw;
+  height: 75vh;
+  background: #f5f5f5;
+  -webkit-box-shadow: 2px 2px 5px #ccc;
+          box-shadow: 2px 2px 5px #ccc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.component {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+  height: 100%;
+}
+
+.component-code {
+  width: 50%;
+  height: 100%;
+  background: #282828;
+  border-radius: 0 1rem 1rem 0;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+code {
+  font-size: 1rem;
+  color: #DDD;
+}
+
+.layout-wrapper {
+  width: 100vw;
+  height: 100vh;
+  background: #402929;
+}
+
+.dark {
+  background: #120505;
+}
+
+.dark-mode-toggler {
+  padding: 1rem;
+  color: white;
+  background: #282828;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  -webkit-box-shadow: 2px 2px 5px #ccc;
+          box-shadow: 2px 2px 5px #ccc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 1rem auto;
+}
+
+.profile-presentation-card {
+  height: 20rem;
+  width: 20rem;
+  border-radius: 1rem;
+  padding: .5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 1px 1px 15px #ccc;
+          box-shadow: 1px 1px 15px #ccc;
+}
+
+.profile-presentation-card .profile-photo {
+  margin: 1rem 0 0;
+}
+
+.profile-presentation-card .profile-photo img {
+  height: 8rem;
+  width: 8rem;
+  border-radius: 50%;
+}
+
+.profile-presentation-card .description {
+  color: #555a;
+  font-size: .9rem;
+  text-align: center;
+  margin: 1rem 0 0;
+}
+
+.profile-presentation-card .social-media {
+  margin: 1rem 0;
+}
+
+.profile-presentation-card .social-media svg {
+  margin: 0 .4rem;
+}
+
+.header {
+  width: 50%;
+  height: 100%;
+  padding: 1rem .5rem;
+}
+
+.header .header-two-parts {
+  width: 100%;
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 1.5rem;
+  -webkit-box-shadow: 2px 2px 5px #ccc;
+          box-shadow: 2px 2px 5px #ccc;
+}
+
+.header .header-two-parts .navigation {
+  position: absolute;
+  top: 10vh;
+  right: 5vw;
+  background: #fff;
+  -webkit-box-shadow: 2px 2px 5px #ccc;
+          box-shadow: 2px 2px 5px #ccc;
+}
+
+.header .header-two-parts .navigation .list .item {
+  padding: 1rem 1.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .header-two-parts .navigation .list .item svg {
+  margin-right: .5rem;
+}
+
+.header .header-brand-logo img {
+  height: 3rem;
+}
+
+.visible {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hidden {
+  display: none;
+}
+/*# sourceMappingURL=main.css.map */

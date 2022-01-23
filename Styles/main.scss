@@ -1,0 +1,233 @@
+// VARIABLES
+
+$bg-dark-color: #402929;
+$bg-light-color: #f5f5f5;
+$main-color:#903030;
+$main-dark-color:#282828;
+$main-light-color:#DDD;
+$light-shadow-color: #ccc;
+$dark-shadow-color: #333;
+$light-text-color:#555a;
+
+// MIXINGS
+
+@mixin flexCenter() {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+@mixin flexColumnCenter() {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+//  body {
+//      @include flexCenter();
+//  }
+
+// MAIN
+
+@import url('https://fonts.googleapis.com/css2?family=Diplomata+SC&family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+    background:$bg-dark-color;
+    transition: .4s all ease;
+}
+
+a {
+    text-decoration: none;
+    color:$main-dark-color;
+    font-weight: bold;
+} 
+
+li {
+    list-style-type: none;
+}
+
+#burger {
+    cursor:pointer;
+    border:none;
+    outline:none;
+    background:none;
+}
+
+.main-wrapper {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.component-wrapper {
+    margin:4rem 0;
+    border-radius:1rem;
+    width:80vw;
+    height:75vh;
+    background:$bg-light-color;
+    box-shadow: 2px 2px 5px $light-shadow-color;
+    display:flex;
+
+}
+
+.component {
+    @include flexCenter();
+    width:50%;
+    height:100%;
+}
+
+.component-code {
+    width:50%;
+    height:100%;
+    background:$main-dark-color;
+    border-radius:0 1rem 1rem 0;
+    border:1px solid $light-shadow-color;
+    padding: 1rem;
+    overflow-y:scroll;
+    overflow-x: hidden;
+}
+
+code {
+    font-size:1rem;
+    color:$main-light-color;
+}
+
+.layout-wrapper {
+    width:100vw;
+    height:100vh;
+    background:$bg-dark-color;
+}
+
+.dark {
+    background:#120505;
+}
+
+.dark-mode-toggler {
+    padding:1rem;
+    color:white;
+    background:$main-dark-color;
+    border:none;
+    outline:none;
+    cursor:pointer;
+    font-size:1.2rem;
+    box-shadow: 2px 2px 5px $light-shadow-color;
+    display:flex;
+    margin:1rem auto;
+}
+
+// COMPONENTS
+
+.profile-presentation-card {
+    height:20rem;
+    width:20rem;
+    border-radius:1rem;
+    padding:.5rem;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 1px 1px 15px $light-shadow-color;
+
+    .profile-photo {
+        margin:1rem 0 0;
+        img {
+            height:8rem;
+            width:8rem;
+            border-radius:50%;
+        }
+    }
+
+    .description {
+        color:$light-text-color;
+        font-size:.9rem;
+        text-align: center;
+        margin:1rem 0 0;
+    }
+
+    .social-media {
+        margin:1rem 0;
+
+        svg {
+            margin:0 .4rem;
+        }
+    }
+}
+
+// HEADERS
+
+.header {
+    width:50%;
+    height:100%;
+    padding:1rem .5rem;
+
+    .header-two-parts {
+        width:100%;
+        height:10vh;
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        padding:0 1.5rem;
+        box-shadow:2px 2px 5px $light-shadow-color;
+
+        .navigation {
+            position:absolute;
+            top:10vh;
+            right:5vw;
+            background:#fff;
+            box-shadow:2px 2px 5px $light-shadow-color;
+            .list {
+                .item {
+                    padding:1rem 1.2rem;
+                    display:flex;
+                    align-items:center;
+
+                    svg {
+                        margin-right:.5rem;
+                    }
+                }
+            }
+        }
+    }
+
+
+    
+    .header-brand-logo {
+        img {
+            height:3rem;
+        }
+    }
+}
+
+
+
+// FOOTERS
+
+// LAYOUTS
+
+// MISCELLANEOUS
+
+
+
+
+
+
+
+
+
+
+// UTILS 
+
+.visible {
+    display:flex;
+}
+
+.hidden {
+    display:none;
+}
