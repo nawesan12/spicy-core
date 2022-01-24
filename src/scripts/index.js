@@ -38,3 +38,8 @@ async function getData(url) {
 burger.addEventListener('click', toggleNav);
 darkModeToggler.addEventListener('click', toggleDarkMode);
 
+const greet = console.log('hola')
+
+module.exports = {
+    greet
+}

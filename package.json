@@ -1,0 +1,20 @@
+{
+  "name": "spicy-core",
+  "version": "1.0.2",
+  "description": "Spicy Components es un grupo de componentes e interfaces creados por mi :) para ser usados con libertad por la comunidad y agilizar el proceso de maquetacion de paginas web",
+  "main": "scripts/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nawesan12/spicy-core.git"
+  },
+  "keywords": [],
+  "author": "nawesan12",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nawesan12/spicy-core/issues"
+  },
+  "homepage": "https://github.com/nawesan12/spicy-core#readme"
+}
